@@ -1,0 +1,4 @@
+# Ignore temp files
+*.cache
+*.last-run
+*ca-bundle
