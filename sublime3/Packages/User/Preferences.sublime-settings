@@ -1,3 +1,24 @@
 {
-	"font_size": 13
+	"color_scheme": "Packages/User/Solarized-dark-Nitrous.io (SL).tmTheme",
+	"draw_white_space": "all",
+	"font_size": 12,
+	"ignored_packages":
+	[
+		"Package Control",
+		"Vintage"
+	],
+	"paths":
+	{
+		"linux":
+		[
+			"/home/miri/.pyenv/shims"
+		],
+		"osx":
+		[
+		],
+		"windows":
+		[
+		]
+	},
+	"trim_trailing_white_space_on_save": true
 }

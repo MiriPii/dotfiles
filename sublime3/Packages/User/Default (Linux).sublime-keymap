@@ -1,0 +1,5 @@
+[
+	{ "keys": ["ctrl+m"], "command": "toggle_comment", "args": { "block": false } },
+	{ "keys": ["ctrl+alt+m"], "command": "toggle_comment", "args": { "block": true } },
+	{ "keys": ["ctrl+§"], "command": "show_panel", "args": {"panel": "console", "toggle": true} }
+]

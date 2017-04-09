@@ -1,7 +1,18 @@
 {
 	"bootstrapped": true,
-	"installed_packages":
+	"in_process_packages":
 	[
 		"Package Control"
+	],
+	"installed_packages":
+	[
+		"Anaconda",
+		"Colorsublime",
+		"GitGutter",
+		"Package Control",
+		"SideBarEnhancements",
+		"SublimeLinter",
+		"SublimeLinter-pep8",
+		"SublimeLinter-pyflakes"
 	]
 }
