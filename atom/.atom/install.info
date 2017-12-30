@@ -1,0 +1,8 @@
+Backup all .json, .cson, coffee and .less files in the atom-root for stow
++ the list of packages
+
+To list packages for stow/backup:
+	apm list --installed --bare > packages.list
+
+To install from the package-list:
+	apm install --packages-file packages.list

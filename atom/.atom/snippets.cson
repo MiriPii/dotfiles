@@ -1,0 +1,6 @@
+'.text.html.basic':
+  'External script':
+    'prefix': 'escript',
+    'body': """
+      <script type="${1:text/javascript}" src="${2:script}.js" charset="utf-8"></script>${3}
+    """

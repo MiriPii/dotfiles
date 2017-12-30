@@ -1,0 +1,24 @@
+"*":
+  core:
+    disabledPackages: [
+      "linter-python"
+    ]
+    telemetryConsent: "limited"
+  editor:
+    fontSize: 13
+  "exception-reporting":
+    userId: "2e317a5f-45e8-4fed-9b5d-170feeae45c4"
+  "linter-python":
+    executablePath: "/home/smirq/.pyenv/shims/pylama"
+    withPep8: true
+    withPyflakes: true
+  "linter-ui-default":
+    showPanel: true
+  welcome:
+    showOnStartup: false
+".basic.html.text":
+  editor:
+    showInvisibles: true
+".python.source":
+  editor:
+    showInvisibles: true
