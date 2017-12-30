@@ -1,0 +1,8 @@
+Section "Device"
+    Identifier     "intelDevice"
+    Driver         "intel"
+    Option         "XvMC" "true"
+    Option         "UseEvents" "true"
+    Option         "AccelMethod" "UXA"
+    BusID          "PCI:0:2:0"
+EndSection
