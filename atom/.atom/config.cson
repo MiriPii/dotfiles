@@ -1,24 +1,87 @@
 "*":
+  "autocomplete-plus":
+    confirmCompletion: "tab"
   core:
     disabledPackages: [
-      "linter-python"
+      "language-gfm"
+      "markdown-preview"
     ]
     telemetryConsent: "limited"
-  editor:
-    fontSize: 13
+  editor: {}
   "exception-reporting":
-    userId: "2e317a5f-45e8-4fed-9b5d-170feeae45c4"
-  "linter-python":
-    executablePath: "/home/smirq/.pyenv/shims/pylama"
-    withPep8: true
-    withPyflakes: true
-  "linter-ui-default":
-    showPanel: true
+    userId: "453a26d4-1645-4891-93c8-0f2608c16037"
+  latex:
+    texPath: "/usr/local/texlive/2018/bin/x86_64-linux/"
+  "linter-spell":
+    defaultLanguages: [
+      "en-GB"
+      "finnish"
+    ]
+    spellPath: "/usr/bin/aspell"
+  "linter-spell-latex":
+    checkComments: false
+  "markdown-pdf": {}
+  "markdown-preview-plus":
+    mathConfig:
+      enableLatexRenderingByDefault: true
+    saveConfig:
+      defaultSaveFormat: "pdf"
+      mediaOnCopyAsHTMLBehaviour: "relativized"
+    syncConfig:
+      syncEditorOnPreviewScroll: true
+  "spell-check":
+    addKnownWords: true
   welcome:
     showOnStartup: false
-".basic.html.text":
+".md.text":
   editor:
-    showInvisibles: true
-".python.source":
-  editor:
-    showInvisibles: true
+    tabLength: 4
+"autocomplete-paths":
+  scopes: [
+    {
+      extensions: [
+        ".tex"
+        ".bib"
+        ".tikz"
+      ]
+      prefixes: [
+        "\\\\input{"
+        "\\\\include(?:only)?{([^\\}]*?\\,\\s*)*"
+        "\\\\(?:addbibresource|add(?:global|section)bib)(?:\\[.*?\\])?{"
+        "^%\\s*!T[eE]X\\s+(root|bib)\\s*=\\s*"
+      ]
+      relative: true
+      scopes: [
+        "text.tex.latex"
+        "text.tex.latex.tikz"
+      ]
+    }
+    {
+      extensions: [
+        ".jpeg"
+        ".jpg"
+        ".png"
+      ]
+      prefixes: [
+        "\\\\includegraphics(\\[.*?\\])?{"
+      ]
+      relative: true
+      scopes: [
+        "text.tex.latex"
+        "text.tex.latex.tikz"
+      ]
+    }
+    {
+      extensions: [
+        ".*"
+      ]
+      prefixes: [
+        "\\\\inputminted\\{.*\\}\\{"
+      ]
+      relative: true
+      scopes: [
+        "text.tex.latex"
+        "text.tex.latex.tikz"
+      ]
+    }
+  ]
