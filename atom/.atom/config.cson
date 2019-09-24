@@ -15,11 +15,13 @@
   "linter-spell":
     defaultLanguages: [
       "en-GB"
-      "finnish"
+      "fi"
     ]
     spellPath: "/usr/bin/aspell"
   "linter-spell-latex":
     checkComments: false
+  "linter-ui-default":
+    panelHeight: 240
   "markdown-pdf": {}
   "markdown-preview-plus":
     mathConfig:
@@ -35,7 +37,7 @@
     showOnStartup: false
 ".md.text":
   editor:
-    tabLength: 4
+    showIndentGuide: true
 "autocomplete-paths":
   scopes: [
     {
