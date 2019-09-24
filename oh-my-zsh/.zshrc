@@ -104,7 +104,7 @@ ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg-white'
 ## PATH ##
 ##########
 
-export PATH="/usr/local/texlive/2018/bin/x86_64-linux:/home/smirq/.pyenv/bin:/home/smirq/.local/bin:$PATH"
+export PATH="/usr/local/texlive/2018/bin/x86_64-linux:/home/smirq/.pyenv/bin:/home/smirq/.local/bin:/home/smirq/.poetry/bin:$PATH"
 
 ##################
 ## PYENV  SETUP ##
