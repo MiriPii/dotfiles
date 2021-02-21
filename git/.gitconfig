@@ -1,0 +1,14 @@
+#[user]
+#    name = 
+#    email = 
+[core]
+	excludesfile = ~/.config/git/.global-gitignore
+	editor = vim
+[merge]
+	ff = false
+[branch]
+	autosetuprebase = always
+[pager]
+	branch = false
+[diff]
+	algorithm = histogram

@@ -1,0 +1,6 @@
+# VSCode workspace config
+.vscode
+.vs
+
+# Temporal directory
+tmp/
