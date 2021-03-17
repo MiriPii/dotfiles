@@ -1,0 +1,19 @@
+##################
+##  MY ALIASES  ##
+##################
+
+# ZSH
+alias zrc="code ~/.zshrc"
+alias zre="source ~/.zshrc"
+alias bk="cd $OLDPWD" # Go back to prev folder
+
+# Network
+alias ping="ping -c 5"
+
+# -----------------------------------------------------------------------
+####  SAFE KEEPING  ####
+alias rm="rm -i"
+alias cp="cp -i"
+alias mv="mv -i"
+
+###### END OF ALIASES ######
