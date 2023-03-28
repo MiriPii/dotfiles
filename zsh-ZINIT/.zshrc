@@ -29,7 +29,7 @@ ZINIT[ZCOMPDUMP_PATH]=$XDG_CACHE_HOME/zsh/zcompdump
 if [[ ! -f $ZINIT_HOME/bin/zinit.zsh ]]; then
     print -P "%F{33}▓▒░ %F{220}Installing %F{33}DHARMA%F{220} Initiative Plugin Manager (%F{33}zdharma/zinit%F{220})…%f"
     command mkdir -p "$ZINIT_HOME" && command chmod g-rwX "$ZINIT_HOME"
-    command git clone https://github.com/zdharma/zinit "$ZINIT_HOME/bin" && \
+    command git clone https://github.com/zdharma-continuum/zinit "$ZINIT_HOME/bin" && \
         print -P "%F{33}▓▒░ %F{34}Installation successful.%f%b" || \
         print -P "%F{160}▓▒░ The clone has failed.%f%b"
 fi
@@ -62,15 +62,20 @@ zct() {
 # Config source  #
 ##################
 
+# Load a few important annexes, without Turbo
+# (this is currently required for annexes)
+
 zt light-mode for \
     pick'async.zsh' \
         mafredri/zsh-async \
         romkatv/powerlevel10k \
 
 zt light-mode compile'*handler' for \
-        zinit-zsh/z-a-patch-dl \
-        zinit-zsh/z-a-bin-gem-node \
-        zinit-zsh/z-a-submods
+        zdharma-continuum/zinit-annex-as-monitor \
+        zdharma-continuum/zinit-annex-bin-gem-node \
+        zdharma-continuum/zinit-annex-patch-dl \
+        zdharma-continuum/zinit-annex-rust \
+        zdharma-continuum/zinit-annex-submods
 
 ## Add this if you want to create local plugins
 ##      see: https://github.com/zdharma/zinit-configs/tree/master/NICHOLAS85
@@ -144,7 +149,7 @@ zt 0c light-mode for \
 zt 0c light-mode null for \
         supercrabtree/k \
     sbin"bin/git-dsf;bin/diff-so-fancy" \
-        zdharma/zsh-diff-so-fancy \
+        zdharma-continuum/zsh-diff-so-fancy \
     sbin \
         paulirish/git-open
 
