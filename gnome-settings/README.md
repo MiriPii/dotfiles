@@ -20,3 +20,7 @@ Keyboardmap without the finnish dead-keys
 
 `Finnish (classic, no dead keys)`
 
+### X11
+
+`setxkbmap fi nodeadkeys`
+
