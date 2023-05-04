@@ -180,6 +180,7 @@
         "editor.acceptSuggestionOnEnter": "off",
         //"editor.wordWrapColumn": 80,
         "editor.wrappingIndent": "indent",
-    }
+    },
+    "workbench.startupEditor": "none"
 
 }
