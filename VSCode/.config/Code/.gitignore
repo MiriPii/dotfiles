@@ -1,0 +1,9 @@
+# Ignore everything
+*
+
+# Except
+!.gitignore
+!User/*
+!backup-readme.md
+!vs_code_extensions_list.txt
+
