@@ -1,0 +1,4 @@
+ms-vscode.wordcount
+shd101wyy.markdown-preview-enhanced
+wayou.vscode-todo-highlight
+yzhang.markdown-all-in-one
