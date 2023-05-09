@@ -3,7 +3,8 @@
 ##################
 
 # ZSH
-alias zrc="code ~/.zshrc"
+alias vim="nvim"
+alias zrc="vim ~/.zshrc"
 alias zre="source ~/.zshrc"
 alias bk="cd $OLDPWD" # Go back to prev folder
 
