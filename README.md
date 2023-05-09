@@ -1,4 +1,4 @@
-# dotfiles
+# Dotfiles
 
 My magic configuration for dots and configs.
 
@@ -67,3 +67,18 @@ To backup new config, see [here](#backup-new-config).
 ### Backup new config
 
 To add new configurations to the backup create a new directory and copy the files (including the tree-path).
+
+```bash
+# cp -R --parents <path-to-file-from-home> <dotfiles-configname>
+# e.g. for NeoVim/nvChad config
+~ pwd
+/home/MiriPii
+~ cp -R --parents .config/nvim/lua/custom/chadrc.lua dotfiles/NeoVim
+~ tree -a ~/dotfiles/NeoVim
+dotfiles/NeoVim
+└── .config
+    └── nvim
+        └── lua
+            └── custom
+                └── chadrc.lua
+```
